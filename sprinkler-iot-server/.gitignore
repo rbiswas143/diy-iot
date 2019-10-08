@@ -1,0 +1,4 @@
+logs/
+.idea/
+src/PrivateConfig.py
+*.pyc
