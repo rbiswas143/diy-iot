@@ -1,0 +1,6 @@
+[Unit]
+Description=Restarts tunnels
+
+[Service]
+Type=oneshot
+ExecStart=/bin/systemctl restart serveo-tunnel.service

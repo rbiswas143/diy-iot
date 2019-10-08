@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer for periodically sending health emails
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+Unit=health-emails.service
+
+[Install]
+WantedBy=timers.target

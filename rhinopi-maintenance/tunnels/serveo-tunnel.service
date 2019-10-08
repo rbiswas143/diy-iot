@@ -1,0 +1,10 @@
+[Unit]
+Description=Keeps an ssh tunnel active to serveo
+
+[Service]
+ExecStart=/bin/ssh -o "StrictHostKeyChecking no" -o "ServerAliveInterval 300" -o "ServerAliveCountMax 0" -R rhinopi:22:localhost:22 serveo.net
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

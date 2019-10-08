@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for keeping git repos in sync
+
+[Timer]
+OnCalendar=hourly
+Unit=git-sync.service
+
+[Install]
+WantedBy=timers.target

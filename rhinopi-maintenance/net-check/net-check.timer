@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for keeping internet connection active
+
+[Timer]
+OnCalendar=hourly
+Unit=net-check.service
+
+[Install]
+WantedBy=timers.target

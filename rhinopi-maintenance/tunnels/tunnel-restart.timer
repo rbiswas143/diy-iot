@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for periodically restarting tunnels
+
+[Timer]
+OnCalendar=hourly
+Unit=tunnel-restart.service
+
+[Install]
+WantedBy=timers.target

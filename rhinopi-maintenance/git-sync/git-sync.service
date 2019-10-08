@@ -1,0 +1,6 @@
+[Unit]
+Description=Service for keeping git repos in sync
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh /root/scripts/git-sync/sync.sh

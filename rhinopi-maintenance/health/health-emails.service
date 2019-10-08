@@ -1,0 +1,7 @@
+[Unit]
+Description=Generates and sends health emails
+
+[Service]
+Type=oneshot
+ExecStart=/root/scripts/health/gen_reports.sh
+ExecStart=/bin/python /root/scripts/health/emailer.py

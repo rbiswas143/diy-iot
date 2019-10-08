@@ -1,0 +1,6 @@
+[Unit]
+Description=Service for keeping network connection active
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh /root/scripts/net-check/net-check.sh

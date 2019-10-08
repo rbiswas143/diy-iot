@@ -1,0 +1,8 @@
+[Unit]
+Description=Switch Control
+
+[Service]
+ExecStart=/home/alarm/.py-envs/sprinkler/bin/python /root/scripts/switch/switch_toggle.py
+
+[Install]
+WantedBy=multi-user.target
