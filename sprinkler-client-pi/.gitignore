@@ -1,0 +1,5 @@
+.idea/
+logs/
+*.swp
+*.pyc
+PrivateConfig.py
