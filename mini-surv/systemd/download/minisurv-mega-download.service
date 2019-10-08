@@ -1,0 +1,6 @@
+[Unit]
+Description=Service for minisurv mega download
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh ~/mini-surv/scripts/mega_download.sh ~/minisurv/snaps

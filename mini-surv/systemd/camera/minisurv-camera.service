@@ -1,0 +1,8 @@
+[Unit]
+Description=Service for minisurv camera
+
+[Service]
+ExecStart=/home/alarm/.virtualenvs/mini-surv/bin/python /root/mini-surv/minisurv.py
+
+[Install]
+WantedBy=multi-user.target

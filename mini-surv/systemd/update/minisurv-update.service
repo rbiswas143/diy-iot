@@ -1,0 +1,6 @@
+[Unit]
+Description=Service for minisurv update
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh /root/mini-surv/scripts/update.sh

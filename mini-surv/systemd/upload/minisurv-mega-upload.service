@@ -1,0 +1,6 @@
+[Unit]
+Description=Service for minisurv mega upload
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh /root/mini-surv/scripts/mega_upload.sh /root/mini-surv/snaps

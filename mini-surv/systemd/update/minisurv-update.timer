@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for minisurv update
+
+[Timer]
+OnCalendar=00/6:*
+Unit=minisurv-update.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for minisurv mega upload
+
+[Timer]
+OnCalendar=*:0/3
+Unit=minisurv-mega-upload.service
+
+[Install]
+WantedBy=timers.target
